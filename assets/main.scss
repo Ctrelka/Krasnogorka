@@ -1,0 +1,13 @@
+@import "./base";
+@import "./reset";
+@import "./bem/opportunity/opportunity";
+@import "./bem/opportunities/opportunities";
+@import "./bem/subtitle/subtitle";
+@import "./bem/features/features";
+@import "./bem/features/feature";
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}

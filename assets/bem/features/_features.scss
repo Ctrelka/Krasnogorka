@@ -1,0 +1,25 @@
+@import "./../../base";
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  &__item {
+    flex: 1 0 25%;
+    padding: 1rem;
+    max-width: 25%;
+  }
+  @media (max-width: map-get($media-feature, sm)) {
+    &__item {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media (max-width: map-get($media, xs)) {
+    &__item {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  }
+
+}

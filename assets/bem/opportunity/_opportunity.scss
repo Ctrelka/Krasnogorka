@@ -1,0 +1,77 @@
+@import "../../base";
+
+$opportunity--border: (
+        red:#F00,
+        green:#0F0,
+        blue: #00F,
+        purple:#800080,
+        lime:#ffff00,
+        aqua:#00ffff
+);
+
+.opportunity {
+  display: flex;
+  border-radius: .25rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  min-height: 12rem;
+
+  &__wrapper {
+    flex: 1 0 50%;
+    padding: 1rem;
+    max-width: 100%;
+  }
+  &__wrapper-image {
+    display: flex;
+    max-width: 50%;
+    flex: 1 0 50%;
+  }
+  &__image {
+    align-self: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    padding: 1rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  &__description {
+    margin-top: 1rem;
+  }
+
+  @each $name, $value in $opportunity--border {
+    &--border-#{$name} {
+      border-left: 6px solid $value;
+    }
+  }
+
+  @media (max-width: map-get($media, md)) {
+
+    & {
+      flex-direction: column;
+    }
+    &__wrapper-image {
+      order: -1;
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+
+    &__text {
+      min-height: 120px;
+    }
+
+  }
+
+  @media (max-width: map-get($media, sm)) {
+    &__text {
+      min-height: 160px;
+    }
+  }
+
+}

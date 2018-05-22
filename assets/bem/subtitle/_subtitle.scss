@@ -1,0 +1,15 @@
+
+.subtitle {
+
+  &:after {
+    margin-left: .5rem;
+    color: green;
+    content: "/";
+  }
+
+  &:before {
+    margin-right: .5rem;
+    color: green;
+    content: "/";
+  }
+}
