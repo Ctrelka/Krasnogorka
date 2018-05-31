@@ -1,0 +1,2 @@
+.tabs{background-color:white;box-shadow:0 2px 4px grey;border-radius:4px}.tabs__navigation{display:flex;flex-wrap:wrap;background-color:grey;border-top-left-radius:4px;border-top-right-radius:4px}.tabs__link{display:block;text-decoration:none;padding:1rem}.tabs__link:first-child{border-top-left-radius:4px}.tabs__link--active{background:white}.tabs__content{display:none;padding:1rem;animation:fade .3s ease-in}.tabs__content--active{display:block}@keyframes fade{from{opacity:0}to{opacity:100%}}
+/*# sourceMappingURL=krasnogorkaTabs.css.map */

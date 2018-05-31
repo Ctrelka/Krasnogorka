@@ -1,0 +1,28 @@
+.tabs {
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__content {
+    display: none;
+    animation: fade .2s ease-in;
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+

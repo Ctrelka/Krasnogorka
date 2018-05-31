@@ -1,0 +1,2 @@
+.tabs__navigation{display:flex;flex-wrap:wrap}.tabs__link{display:block}.tabs__content{display:none;animation:fade .2s ease-in}.tabs__content--active{display:block}@keyframes fade{from{opacity:0}to{opacity:100%}}
+/*# sourceMappingURL=tabs.css.map */
