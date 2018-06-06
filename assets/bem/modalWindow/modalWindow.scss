@@ -1,0 +1,82 @@
+$WIDTH_WRAPPER: 90%;
+$TOP_WRAPPER: 10%;
+
+.modal-window {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: backGroundColorModal .3s ease-out;
+
+  &__wrapper {
+    width: $WIDTH_WRAPPER;
+    background-color: white;
+    position: absolute;
+    top: $TOP_WRAPPER;
+    left: (100%-$WIDTH_WRAPPER)/2;
+    transition: all .3s ease-out;
+    animation: openWrapper .3s ease-out;
+  }
+
+  &__close {
+    color: black;
+    top: .25rem;
+    position: absolute;
+    right: .25rem;
+    line-height: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__content {
+    margin-top: 1.5rem;
+  }
+
+  &--active {
+    display: block;
+    .modal-window__wrapper {
+      transform: translateY(10%);
+    }
+  }
+
+  &--close {
+    animation: closeModal .3s ease-out;
+    display: block;
+    opacity: 0;
+  }
+}
+
+@keyframes openWrapper {
+  0% {
+    top: $TOP_WRAPPER - 5%;
+  }
+
+  100% {
+    top: $TOP_WRAPPER;
+  }
+}
+
+@keyframes backGroundColorModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes closeModal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+

@@ -19,24 +19,6 @@
 //     return containsClassName(str, className) ? deleteClassName(str, className) : addClassName(str, className);
 // }
 
-
-function cc(el) {
-    el.removeClassName("g-red");
-}
-
-
-// var elems = document.getElementsByTagName('p');
-//
-// for (var i=0;i<elems.length;i++)
-// {
-//     elems[i].innerHTML = "mastak";
-//     elems[i].className = "b-red";
-//     if(elems[i].getAttribute('data-id') === null){
-//         elems[i].style.backgroundColor="blue";
-//     }
-//
-//
-// }
 var elemProducts = document.getElementsByClassName('products')[0].innerHTML;
 
 function addProducts() {
@@ -67,20 +49,3 @@ function changeElements() {
     })
 }
 
-
-var tabsElem = document.getElementsByClassName("tabs")[0];
-var tabsLink = tabsElem.getElementsByClassName("tab__link");
-var tabsContent = tabsElem.getElementsByClassName("tab__content");
-
-function tabs(event, tabsName) {
-    if (tabsLink.length == tabsContent.length) {
-        for (i = 0; i < tabsContent.length; i++) {
-            tabsContent[i].style.display = "none";
-        }
-        for (var i = 0; i < tabsLink.length; i++) {
-            tabsLink[i].className = tabsLink[i].className.replace('active', '');
-        }
-        document.getElementById(tabsName).style.display = "block";
-        event.currentTarget.className += " active";
-    } else console.log("error");
-}
