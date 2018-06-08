@@ -1,0 +1,22 @@
+.accordion__item-button {
+  display: flex;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  border: none; }
+.accordion__item-button:hover, .accordion__item-button--active {
+  background-color: red; }
+.accordion__item-panel {
+  background-color: white;
+  overflow: hidden;
+  height: 0;
+  transition: all .3s linear; }
+
+@keyframes openPanel {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=accordion.css.map */

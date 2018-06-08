@@ -5,6 +5,7 @@
         MODAL_WINDOW = 'modal-window',
         MODAL_WINDOW_CLOSE = 'modal-window__close',
         MODAL_CLOSE = 'modal-window--close';
+        WRAPPER_CLOSE = 'modal-window__wrapper--close'
     var buttons = document.querySelectorAll('[' + DATA_MODAL + ']');
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', openModal, false);
