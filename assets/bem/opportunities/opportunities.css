@@ -1,0 +1,16 @@
+.opportunities {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem; }
+  .opportunities__item {
+    flex: 1 0 50%;
+    padding: 1rem;
+    max-width: 100%; }
+  @media (max-width: 650px) {
+    .opportunities__item {
+      flex: 1 0 100%;
+      max-width: 100%; }
+    .opportunities__text {
+      min-height: 110px; } }
+
+/*# sourceMappingURL=opportunities.css.map */
