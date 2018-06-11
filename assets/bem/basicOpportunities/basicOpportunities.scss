@@ -1,0 +1,52 @@
+@import "./../../reset";
+@import "./../../base";
+
+$media: (
+        xs:768px,
+        sm:1024px,
+        md:1280px);
+$FONT-SIZE: 1rem;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.basic-opportunities {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #6775A8;
+  color: white;
+  @media (min-width: map-get($media, md)) {
+    border-radius: .4rem;
+  }
+  &__item {
+    width: 50%;
+    text-align: center;
+    padding: 1.25rem;
+
+    &-image{
+      max-width: 40px;
+      height: 40px;
+      margin-bottom: .25rem;
+    }
+
+    &-text{
+      font-size: $FONT-SIZE;
+    }
+    @media (min-width: map-get($media, xs)) {
+      width: 33.333%;
+    }
+    @media (min-width: map-get($media, sm)) {
+      width: 25%;
+    }
+
+    @media (min-width: map-get($media, md)) {
+      width: 16.6666%;
+      border-radius: .4rem;
+    }
+
+  }
+}
+
+

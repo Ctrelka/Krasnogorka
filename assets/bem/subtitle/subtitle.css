@@ -1,0 +1,14 @@
+.subtitle:after {
+  margin-left: .5rem;
+  color: green;
+  content: "/";
+  font-weight: bolder;
+  font-size: 1.5rem; }
+.subtitle:before {
+  margin-right: .5rem;
+  color: green;
+  content: "/";
+  font-weight: bolder;
+  font-size: 1.5rem; }
+
+/*# sourceMappingURL=subtitle.css.map */
