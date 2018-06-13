@@ -1,0 +1,40 @@
+@import "./../../base";
+@import "./../../reset";
+
+.get-test {
+  color: white;
+  padding: 3rem 0;
+  &__title {
+    font-size: 24px;
+  }
+  &__image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__description {
+    max-width: 120px;
+    margin: 3rem 0;
+    text-align: center;
+  }
+  &__button {
+    text-decoration: none;
+    padding: .5rem 2.5rem;
+    color: white;
+    background-color: #d0021b;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    &::after {
+      margin-left: .5rem;
+      content: ">>";
+    }
+  }
+
+}
