@@ -117,10 +117,10 @@ table {
       flex-direction: row;
       padding-top: 0;
       align-items: center; }
-      .footer-bottom-right__banks-icons {
-        margin-top: -1.5rem; }
       .footer-bottom-right-img {
         padding: 0 .5rem; }
+      .footer-bottom-right__banks-icons {
+        margin-top: 0; }
       .footer-bottom-right__description {
         align-items: flex-end;
         margin-bottom: 0;

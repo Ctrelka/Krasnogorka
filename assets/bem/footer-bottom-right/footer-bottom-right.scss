@@ -33,7 +33,7 @@ $MEDIA: (
   @media (min-width: map-get($MEDIA, SM)) {
     flex-direction: row-reverse;
     &__banks-icons {
-      margin-top: -2.5rem;
+    margin-top: -2.5rem;
     }
   }
 
@@ -41,11 +41,11 @@ $MEDIA: (
     flex-direction: row;
     padding-top: 0;
     align-items: center;
-    &__banks-icons {
-      margin-top: -1.5rem;
-    }
     &-img {
       padding: 0 .5rem;
+    }
+    &__banks-icons {
+      margin-top: 0;
     }
     &__description {
       align-items: flex-end;

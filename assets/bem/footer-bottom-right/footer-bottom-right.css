@@ -20,16 +20,12 @@
     margin-bottom: 1.5rem; }
   @media (min-width: 768px) {
     .footer-bottom-right {
-      flex-direction: row-reverse; }
-      .footer-bottom-right__banks-icons {
-        margin-top: -2.5rem; } }
+      flex-direction: row-reverse; } }
   @media (min-width: 1280px) {
     .footer-bottom-right {
       flex-direction: row;
       padding-top: 0;
       align-items: center; }
-      .footer-bottom-right__banks-icons {
-        margin-top: -1.5rem; }
       .footer-bottom-right-img {
         padding: 0 .5rem; }
       .footer-bottom-right__description {
