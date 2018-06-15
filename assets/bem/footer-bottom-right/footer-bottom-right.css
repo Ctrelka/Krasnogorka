@@ -1,0 +1,40 @@
+.footer-bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .footer-bottom-right-img {
+    mix-height: 24px;
+    padding: 0 .5rem; }
+  .footer-bottom-right__banks-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: .5rem 0;
+    justify-content: flex-start; }
+  .footer-bottom-right__description {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    .footer-bottom-right {
+      flex-direction: row-reverse; }
+      .footer-bottom-right__banks-icons {
+        margin-top: -2.5rem; } }
+  @media (min-width: 1280px) {
+    .footer-bottom-right {
+      flex-direction: row;
+      padding-top: 0;
+      align-items: center; }
+      .footer-bottom-right__banks-icons {
+        margin-top: -1.5rem; }
+      .footer-bottom-right-img {
+        padding: 0 .5rem; }
+      .footer-bottom-right__description {
+        align-items: flex-end;
+        margin-bottom: 0;
+        margin-top: .5rem; } }
+
+/*# sourceMappingURL=footer-bottom-right.css.map */

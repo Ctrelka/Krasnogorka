@@ -1,0 +1,41 @@
+@import "./../../base";
+@import "./../../reset";
+@import "./../footer-bottom-left/footer-bottom-left";
+@import "./../footer-bottom-right/footer-bottom-right";
+
+$MEDIA: (
+        SM:768px,
+        MD:1024px,
+        LG:1280px);
+
+.b-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-bottom {
+  background-color: #2a3959;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+  }
+
+  @media (min-width: map-get($MEDIA, LG)) {
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__wrapper-left {
+      width: 33.33333%;
+    }
+    &__wrapper-right {
+      width: 66.666666%;
+    }
+  }
+}

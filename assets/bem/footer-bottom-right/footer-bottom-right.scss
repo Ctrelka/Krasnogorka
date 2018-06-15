@@ -1,0 +1,56 @@
+$MEDIA: (
+        SM:768px,
+        MD:1024px,
+        LG:1280px);
+
+.footer-bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-img {
+    mix-height: 24px;
+    padding: 0 .5rem;
+  }
+
+  &__banks-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: .5rem 0;
+    justify-content: flex-start;
+  }
+
+  &__description {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: map-get($MEDIA, SM)) {
+    flex-direction: row-reverse;
+    &__banks-icons {
+      margin-top: -2.5rem;
+    }
+  }
+
+  @media (min-width: map-get($MEDIA, LG)) {
+    flex-direction: row;
+    padding-top: 0;
+    align-items: center;
+    &__banks-icons {
+      margin-top: -1.5rem;
+    }
+    &-img {
+      padding: 0 .5rem;
+    }
+    &__description {
+      align-items: flex-end;
+      margin-bottom: 0;
+      margin-top: .5rem;
+    }
+  }
+}
